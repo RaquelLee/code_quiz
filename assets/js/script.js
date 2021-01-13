@@ -112,3 +112,18 @@ function startTimer() {
         }
     }, 1000);
 }
+function endGame() {
+    clearInterval(timer);
+    initialsPage();
+}
+
+
+function initialsPage() {
+initialsPageStyle();
+    p.textContent = "Your score is: " + timerCount;
+
+        submitBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            scorePage();
+        }        
+        )}
