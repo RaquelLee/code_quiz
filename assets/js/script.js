@@ -15,6 +15,8 @@ var btn4 = document.getElementById("btn4");
 var olEl = document.getElementById("scoreList");
 var pop = document.getElementById("pop");
 
+vs.addEventListener("click", scorePage);
+
 startBtn.addEventListener("click", function () {
     p.setAttribute("class", "d-none");
     startBtn.setAttribute("class", "d-none");
@@ -156,3 +158,9 @@ function scorePage() {
         });
         
     }
+
+    goBck.addEventListener("click", function () {
+        location.reload();
+        return false;
+    });
+    
