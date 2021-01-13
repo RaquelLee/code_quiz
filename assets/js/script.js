@@ -23,3 +23,38 @@ startBtn.addEventListener("click", function () {
     renderQA();
     startTimer();
 });
+
+var qacObjArr = [
+
+    {
+        question: "Commonly used data types do NOT include ____",
+        answers: ["1.strings", "2.booleans", "3.alerts", "4.numbers"],
+        correct: "3.alerts"
+    },
+
+    {
+        question: "The condition in an if/else statement is enclosed  within ____",
+        answers: ["quotes", "curly brackets", "parenthesis", "square brackets"],
+        correct: "parenthesis"
+    },
+
+    {
+        question: "Arrays in JavaScript can be used to store ____",
+        answers: ["numbers and strings", "other arrays", "booleans", "all of the above"],
+        correct: "all of the above"
+    },
+
+    {
+        question: "String values must be enclosed within ____ when   being assigned to variables",
+        answers: ["commas", "curly brackets", "quotes", "parenthesis"],
+        correct: "quotes"
+    },
+
+    {
+        question: "A very useful tool used during development and debugging for printing content to the debugger is ____",
+        answers: ["javascript", "terminal/bash", "for loops", "console.log"],
+        correct: "console.log"
+    },
+]
+
+
