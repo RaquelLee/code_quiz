@@ -112,6 +112,7 @@ function startTimer() {
         }
     }, 1000);
 }
+
 function endGame() {
     clearInterval(timer);
     initialsPage();
@@ -127,3 +128,31 @@ initialsPageStyle();
             scorePage();
         }        
         )}
+
+function scorePage() {
+    scorePageStyle();
+    var initials = document.getElementById("initials").value;
+
+    var userData = {
+        Score: timerCount,
+        User: initials
+    };
+
+    var userScoresArray = JSON.parse(localStorage.getItem("userScoresArray")) || [];
+
+    userScoresArray.push(userData);
+
+    localStorage.setItem("userScoresArray", JSON.stringify(userScoresArray));
+
+    
+        for (i=0;i < userScoresArray.length;i++){
+            var userScore = document.createElement("li");
+            userScore.textContent = "Initials: " + userScoresArray[i].User + " Score: " + userScoresArray[i].Score;
+            olEl.appendChild(userScore);
+        } 
+        scoreClr.addEventListener("click", function () {
+            localStorage.clear();
+            removeAllChildNodes(olEl);
+        });
+        
+    }
