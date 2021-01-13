@@ -57,4 +57,19 @@ var qacObjArr = [
     },
 ]
 
+function renderQA() {
+    if (counter === 5) {
+        return;
+    }
+
+    h1.textContent = objectProperty.question;
+    
+    btns = [btn1, btn2, btn3, btn4];
+
+    for (i = 0; i < btns.length; i++) {
+
+        btns[i].textContent = objectProperty.answers[i];
+    }
+
+}
 
