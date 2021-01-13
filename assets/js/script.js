@@ -96,3 +96,19 @@ btnList.addEventListener("click", function (event) {
     renderQA();
 
 });
+var timerCount = 75;
+
+function startTimer() {
+    timer = setInterval(function () {
+        timerCount--;
+        timerEl.textContent = "Timer: " + timerCount;
+        if (timerCount >= 0) {
+            if (counter === 5 && timerCount > 0) {
+                endGame();
+            }
+        }
+        if (timerCount === 0) {
+            endGame();
+        }
+    }, 1000);
+}
