@@ -72,4 +72,27 @@ function renderQA() {
     }
 
 }
+var counter = 0;
+var objectProperty = qacObjArr[counter];
 
+btnList.addEventListener("click", function (event) {
+    
+    var userAnswer = event.target;
+
+    if (userAnswer.textContent !== objectProperty.correct) {
+        pop.textContent = "Incorrect!";
+        timerCount -= 10;
+    } else {
+        pop.textContent = "Correct!";
+
+    }
+
+    setTimeout(function(){
+        pop.textContent="";
+        },500);
+        
+    counter++
+    objectProperty = qacObjArr[counter];
+    renderQA();
+
+});
