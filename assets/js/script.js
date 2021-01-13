@@ -14,3 +14,12 @@ var btn3 = document.getElementById("btn3");
 var btn4 = document.getElementById("btn4");
 var olEl = document.getElementById("scoreList");
 var pop = document.getElementById("pop");
+
+startBtn.addEventListener("click", function () {
+    p.setAttribute("class", "d-none");
+    startBtn.setAttribute("class", "d-none");
+    btnList.classList.remove("d-none");
+
+    renderQA();
+    startTimer();
+});
