@@ -164,3 +164,17 @@ function scorePage() {
         return false;
     });
     
+    function initialsPageStyle() {
+        btnList.setAttribute("class", "d-none");
+        h1.textContent = "Save Score";
+        p.classList.remove("d-none");
+        form.classList.remove("d-none");
+    }
+    function scorePageStyle() {
+        goBck.classList.remove("d-none");
+        scoreClr.classList.remove("d-none");
+        h1.textContent = "Score Page";
+        form.setAttribute("class", "d-none");
+        startBtn.setAttribute("class", "d-none");
+        p.setAttribute("class", "d-none");
+    }
