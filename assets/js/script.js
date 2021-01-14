@@ -163,6 +163,12 @@ function scorePage() {
         location.reload();
         return false;
     });
+
+    function removeAllChildNodes(parent){
+        while (parent.firstChild) {
+            parent.removeChild(parent.firstChild);
+        }
+    }    
     
     function initialsPageStyle() {
         btnList.setAttribute("class", "d-none");
