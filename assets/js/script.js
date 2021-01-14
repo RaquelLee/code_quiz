@@ -30,8 +30,8 @@ var qacObjArr = [
 
     {
         question: "Commonly used data types do NOT include ____",
-        answers: ["1.strings", "2.booleans", "3.alerts", "4.numbers"],
-        correct: "3.alerts"
+        answers: ["strings", "booleans", "alerts", "numbers"],
+        correct: "alerts"
     },
 
     {

@@ -8,7 +8,7 @@ A responsive quiz featuring a timer, and score page that displays locally stored
 [JavaScript Quiz](https://raquellee.github.io/code_quiz/.)
 
 ## Usage
-![Start Page]()
-![Quiz Timer]()
-![Save Score]()
-![Score Page]()
+![Start Page](https://github.com/RaquelLee/code_quiz/blob/main/assets/images/startpage.png?raw=true)
+![Quiz Timer](https://github.com/RaquelLee/code_quiz/blob/main/assets/images/startquiztimer.png?raw=true)
+![Save Score](https://github.com/RaquelLee/code_quiz/blob/main/assets/images/savescore.png?raw=true)
+![Score Page](https://github.com/RaquelLee/code_quiz/blob/main/assets/images/scorepage.png?raw=true)
